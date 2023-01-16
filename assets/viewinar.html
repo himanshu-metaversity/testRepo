@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ar || Vr</title>
+  <!-- all css here -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <section class="mainholder">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-sm-3">
+          <!-- empty -->
+        </div>
+        <div class="col-sm-6">
+          <div class="firstslideholder d-flex align-items-center justify-content-between flex-column gap-5">
+            <div class="contentholder d-flex align-items-center flex-column gap-3">
+              <div class="headingholder">
+                <!-- <h6 class="fw-normal text-uppercase fs-6 text-center">
+                    voila!
+                  </h6> -->
+              </div>
+              <!-- <div class="verificationholder">
+                  <p class="text-capitalize text-center">
+                    verification successful!
+                  </p>
+                </div> -->
+              <div class="purchasemsgholder">
+                <ol class="text-center fs-6">
+                  <li>Tap to place the modal on a plane.</li>
+                  <li>
+                    Interact with onscreen 3D objects by touching them
+                    directly.
+                  </li>
+                  <li>
+                    You can capture your view to share it with your friends
+                    and family.
+                  </li>
+                </ol>
+              </div>
+
+              <!-- <div class="viewinar imageholder">
+                  <img src="./img/slide3.png" alt="" />
+                </div> -->
+
+              <!-- src="https://cdn.glitch.com/0a981914-f63e-4739-9e2e-bb1779e26a8d%2Fmonumento.glb?v=1587853812483" -->
+              <!-- ios-src="https://cdn.glitch.com/0a981914-f63e-4739-9e2e-bb1779e26a8d%2Fmonumento.usdz?v=1587857767638" -->
+              <!-- 3d model -->
+
+              <model-viewer class="modelviewer" src="./impsource/Hero.gltf" ios-src="./impsource/Hero.usdz"
+                alt="Monumento 3d" shadow-intensity="1" camera-controls interaction-prompt="auto" auto-rotate ar
+                magic-leap>
+              </model-viewer>
+
+              <!-- 3d model -->
+
+            </div>
+
+            <div class="buttonholder w-100">
+              <!-- <div> -->
+              <a href="./arvr.html"
+                class="btn w-50 m-auto btn-sm btn-primary text-uppercase d-flex align-items-center justify-content-center"
+                type="button">
+                <span class="">
+                  <img src="./img/augmented-reality.png" class="img-fluid w-50" alt="" />
+                </span>
+                view in ar
+              </a>
+              <!-- <button class="btn btn-primary" type="button">Button</button> -->
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <!-- empty -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- all scripts here -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer@v0.9.0/dist/model-viewer.js">
+  </script>
+
+  <!-- Loads <model-viewer> for old browsers like IE11: -->
+  <script nomodule src="https://unpkg.com/@google/model-viewer@v0.9.0/dist/model-viewer-legacy.js">
+  </script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/custom.js"></script>
+</body>
+
+</html>
